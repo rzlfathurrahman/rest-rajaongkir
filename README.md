@@ -22,13 +22,24 @@ cd rest-rajaongkir
 ```
 npm install
 ```
-5. Run your website
+5. Check this api documentation to get Api Key **(IMPORTANT)**, type this url to your browser
+```
+https://rajaongkir.com/dokumentasi/starter
+(You should choose/set account as starter type) 
+```
+6. If you have got an api, edit this file `routes/api.js` on line `6`. Change `"ENTER_YOUR_API_KEY_HERE"` to your Api Key
+```
+5. ....
+6. axios.defaults.headers.common["key"] = "ENTER_YOUR_API_KEY_HERE"; // edit this line
+7. ....
+```
+7. Run your website
 ```
 node app
 or
 nodemon app (if you install nodemon)
 ```
-6. Open your browser go to this url
+8. Open your browser go to this url
 ```
 http://127.0.0.1:4000/
 ```
