@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ongkir</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body onload="loadProvinsi()">
+    <h2>Implementasi API RajaOngkir dengan<br />NodeJS + Express</h2>
+    <table cellpadding="5" border="1" style="border-collapse: collapse">
+      <tr>
+        <td colspan="2" style="text-align: center"><b>ASAL PAKET</b></td>
+      </tr>
+      <tr>
+        <td>Provinsi Asal</td>
+        <td>
+          <select id="prov1" onchange="loadKota(this.value, 'kot1')">
+            <option value="" selected="" disabled="">
+              -- Pilih Provinsi --
+            </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Kota Asal</td>
+        <td>
+          <select id="kot1">
+            <option value="" selected="" disabled="">-- Pilih Kota --</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center"><b>TUJUAN PAKET</b></td>
+      </tr>
+      <tr>
+        <td>Provinsi Tujuan</td>
+        <td>
+          <select id="prov2" onchange="loadKota(this.value, 'kot2')">
+            <option value="" selected="" disabled="">
+              -- Pilih Provinsi --
+            </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Kota Tujuan</td>
+        <td>
+          <select id="kot2">
+            <option value="" selected="" disabled="">-- Pilih Kota --</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center"><b>CEK ONGKOS</b></td>
+      </tr>
+      <tr>
+        <td>Berat Paket (gram)</td>
+        <td>
+          <input type="number" id="berat" min="1000" step="100" value="1000" />
+        </td>
+      </tr>
+      <tr>
+        <td>Kurir</td>
+        <td>
+          <select id="kurir">
+            <option value="" selected="" disabled="">-- Pilih Kurir --</option>
+            <option value="jne">JNE</option>
+            <option value="pos">POS Indonesia</option>
+            <option value="tiki">TIKI</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button onclick="cekOngkir()">Cek Ongkir</button></td>
+      </tr>
+    </table>
+    <br />
+    <div id="hasil"></div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
