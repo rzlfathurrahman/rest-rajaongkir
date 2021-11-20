@@ -1,10 +1,9 @@
-# rest-rajaongkir [Cek Ongkir]
-Website cek ongkir memakai NodeJS dan Express serta API RajaOngkir
+# Cek Ongkir
+Website cek ongkos kirim memakai NodeJS dan Express serta API RajaOngkir
 
 ## System Requirements
 1. NodeJS - V16.x.x
-2. MongoDB - V5.x.x
-3. NPM - V8.x.x
+2. NPM - V8.x.x
 
 ## How to Install
 1. Download / clone this repository to your local machine
